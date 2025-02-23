@@ -27,11 +27,12 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased flex bg-zinc-100`}
 			>
-				<div className="w-full max-w-[1200px] mx-auto justify-center flex">
-					<div className="w-full mx-8 px-8 sm:mx-24 lg:mx-32 justify-center flex bg-white ring-1 ring-zinc-100">
-						{children}
+				<div className="z-[-1] fixed inset-0 flex justify-center sm:px-8">
+					<div className="flex w-full max-w-7xl lg:px-8">
+						<div className="w-full bg-white ring-1 ring-zinc-100" />
 					</div>
 				</div>
+				<div className="w-full mx-auto justify-center flex">{children}</div>
 			</body>
 		</html>
 	);

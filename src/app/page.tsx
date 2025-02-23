@@ -4,6 +4,8 @@ import {
 	LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import SocialLink from "@/components/SocialLink";
+import { actionImages } from "@/app/constants/imageBeltConst";
+import ImageBelt from "@/components/ImageBelt";
 
 export default function Home() {
 	return (
@@ -34,6 +36,7 @@ export default function Home() {
 					icon={LinkedInLogoIcon}
 				/>
 			</div>
+			<ImageBelt images={actionImages} />
 		</div>
 	);
 }

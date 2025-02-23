@@ -10,7 +10,7 @@ export default function ImageBelt({ images }: ImageBeltProps) {
 		"rotate-2",
 		"-rotate-2",
 		"rotate-2",
-		"rotate-2",
+		"-rotate-2",
 		"rotate-2",
 		"-rotate-2",
 	];
@@ -22,7 +22,7 @@ export default function ImageBelt({ images }: ImageBeltProps) {
 					<div
 						key={image}
 						className={clsx(
-							"relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800",
+							"relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl",
 							rotations[imageIndex % rotations.length]
 						)}
 					>
@@ -30,7 +30,8 @@ export default function ImageBelt({ images }: ImageBeltProps) {
 							src={image}
 							alt=""
 							sizes="(min-width: 640px) 18rem, 11rem"
-							className="absolute inset-0 h-full w-full object-cover"
+							height={1000}
+							width={1000}
 						/>
 					</div>
 				))}
