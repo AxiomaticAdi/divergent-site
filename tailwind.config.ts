@@ -13,8 +13,8 @@ export default {
 				foreground: "var(--foreground)",
 			},
 			animation: {
-				"move-belt-left": "move-belt-left 25s linear infinite",
-				"move-belt-right": "move-belt-right 25s linear infinite",
+				"move-belt-left": "move-belt-left 10s linear infinite",
+				"move-belt-right": "move-belt-right 10s linear infinite",
 			},
 			keyframes: {
 				"move-belt-left": {
