@@ -37,7 +37,7 @@ export default function ImageBeltMoveOnScroll({
 	return (
 		<div className="w-full inline-flex flex-nowrap mt-10">
 			<ul
-				className="-my-4 flex gap-5 items-center justify-center"
+				className="flex gap-5 items-center justify-center"
 				style={transformStyle}
 			>
 				{images.concat(images).map((image, imageIndex) => (
@@ -52,8 +52,8 @@ export default function ImageBeltMoveOnScroll({
 							src={image}
 							alt=""
 							sizes="(min-width: 640px) 18rem, 11rem"
-							height={1000}
-							width={1000}
+							height={200}
+							width={300}
 						/>
 					</li>
 				))}
