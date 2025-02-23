@@ -1,3 +1,12 @@
+export const rotations = [
+	"rotate-2",
+	"-rotate-2",
+	"rotate-2",
+	"-rotate-2",
+	"rotate-2",
+	"-rotate-2",
+];
+
 export const actionImages = [
 	"https://res.cloudinary.com/djxfhec23/image/upload/v1740294645/DivergentImprov/ActionShots/476489760_17859705321353346_6629993092432768771_n_ffrld9.jpg",
 	"https://res.cloudinary.com/djxfhec23/image/upload/v1740294645/DivergentImprov/ActionShots/476486959_17859705384353346_9123393268771681481_n_temm62.jpg",

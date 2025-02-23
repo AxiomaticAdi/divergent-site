@@ -1,17 +1,10 @@
 import clsx from "clsx";
 import Image from "next/image";
+import { rotations } from "@/app/constants/imageBeltConst";
 
 interface ImageBeltProps {
 	images: string[];
 }
-const rotations = [
-	"rotate-2",
-	"-rotate-2",
-	"rotate-2",
-	"-rotate-2",
-	"rotate-2",
-	"-rotate-2",
-];
 
 export default function ImageBeltMoving({ images }: ImageBeltProps) {
 	return (

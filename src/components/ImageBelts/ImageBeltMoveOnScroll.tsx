@@ -3,19 +3,12 @@
 import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { rotations } from "@/app/constants/imageBeltConst";
 
 interface ImageBeltMoveOnScrollProps {
 	images: string[];
 	direction?: "left" | "right";
 }
-const rotations = [
-	"rotate-2",
-	"-rotate-2",
-	"rotate-2",
-	"-rotate-2",
-	"rotate-2",
-	"-rotate-2",
-];
 
 export default function ImageBeltMoveOnScroll({
 	images,
