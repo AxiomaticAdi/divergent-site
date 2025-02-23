@@ -4,7 +4,6 @@ import Image from "next/image";
 interface ImageBeltProps {
 	images: string[];
 }
-
 const rotations = [
 	"rotate-2",
 	"-rotate-2",
@@ -14,13 +13,13 @@ const rotations = [
 	"-rotate-2",
 ];
 
-export default function ImageBelt({ images }: ImageBeltProps) {
+export default function ImageBeltMoving({ images }: ImageBeltProps) {
 	return (
-		<div className="mt-16 sm:mt-20">
-			<div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+		<div className="w-full inline-flex flex-nowrap">
+			<ul className="-my-4 flex gap-5 items-center justify-center animate-move-belt-left">
 				{images.map((image, imageIndex) => (
-					<div
-						key={image}
+					<li
+						key={imageIndex}
 						className={clsx(
 							"relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl",
 							rotations[imageIndex % rotations.length]
@@ -33,9 +32,9 @@ export default function ImageBelt({ images }: ImageBeltProps) {
 							height={1000}
 							width={1000}
 						/>
-					</div>
+					</li>
 				))}
-			</div>
+			</ul>
 		</div>
 	);
 }
