@@ -31,7 +31,7 @@ export default function ImageBeltMoveOnScroll({
 			: { transform: `translateX(${scrollPosition - 2500}px)` };
 
 	return (
-		<div className="w-full inline-flex flex-nowrap mt-10">
+		<div className="w-screen overflow-hidden inline-flex flex-nowrap mt-10">
 			<ul
 				className="flex gap-5 items-center justify-center"
 				style={transformStyle}
