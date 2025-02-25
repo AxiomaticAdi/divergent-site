@@ -20,5 +20,5 @@ export const actionImages2 = [
 	"https://res.cloudinary.com/djxfhec23/image/upload/v1740302340/DivergentImprov/ActionShots2/479170709_17861264412353346_8266730008488768736_n_z5rdjf.jpg",
 	"https://res.cloudinary.com/djxfhec23/image/upload/v1740302340/DivergentImprov/ActionShots2/481164271_17862152847353346_2408745233436388224_n_qteafk.jpg",
 	"https://res.cloudinary.com/djxfhec23/image/upload/v1740302340/DivergentImprov/ActionShots2/479180249_17861264424353346_4591546096383632696_n_bo8lue.jpg",
-	"https://res.cloudinary.com/djxfhec23/image/upload/v1740302340/DivergentImprov/ActionShots2/480898485_17862152910353346_7040838684674823852_n_v8rw6k.jpg",
+	"https://res.cloudinary.com/djxfhec23/image/upload/v1740302341/DivergentImprov/ActionShots2/479179879_17861264400353346_5168197671880076101_n_ceyauz.jpg",
 ];

@@ -28,7 +28,7 @@ export default function ImageBeltMoveOnScroll({
 	const transformStyle =
 		direction === "left"
 			? { transform: `translateX(-${scrollPosition}px)` }
-			: { transform: `translateX(${scrollPosition - 2500}px)` };
+			: { transform: `translateX(${scrollPosition - 2000}px)` };
 
 	return (
 		<div className="w-screen overflow-hidden inline-flex flex-nowrap mt-10">
